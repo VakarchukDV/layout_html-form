@@ -14,15 +14,15 @@
     <fieldset class="persona form">
       <legend>Personal information</legend>
     <label class="forms">
-      Surname: <input type="text" name="surname" ><br>
+      Surname: <input type="text" name="surname" minlegth="1" maxlength="15" autocomplete="off" ><br>
     </label>
     <label class="forms">
       Name:
-      <input type="text" name="name" ><br>
+      <input type="text" name="name" autocomplete="off"><br>
     </label>
     <label class="forms">
       How old are you?
-      <input type="text" name="old" size="5" value="12" ><br>
+      <input type="number" name="old" size="5" value="12" min="1" max="200"><br>
     </label>
     <label class="forms">
       Full date of birth
@@ -36,7 +36,7 @@
     <legend>Registration</legend>
     <label class="forms" >
       E-mail:
-      <input type="email" name="mail"><br>
+      <input type="email" name="mail" value="email@example.com"><br>
     </label>
     <label >
       Password:
@@ -58,7 +58,7 @@
       </label>
       <label class="forms">
         What time do you go to bed?
-        <input type="text" name="time">
+        <input type="time" name="time">
       </label>
       <label class="forms" >
         What are you favorite brand of cars?
